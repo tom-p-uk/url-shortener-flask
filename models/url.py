@@ -13,7 +13,7 @@ class UrlModel(db.Model):
         self.short_url = short_url
 
     def json(self):
-        return {'long_url': self.long_url, 'short_url': 'https://url-shortener-flask.herokuapp.com/api/' + self.short_url}
+        return {'long_url': self.long_url, 'short_url': 'https://tom-p-uk-url-shortener-flask.herokuapp.com/api/' + self.short_url}
 
     @classmethod
     def find_by_short_url(cls, short_url):
