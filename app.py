@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_restful import Api
 
+from db import db
 from resources.url import Url
 
 app = Flask(__name__)
@@ -17,6 +18,5 @@ def create_tables():
 api.add_resource(Url, '/api/<path:url_param>')
 
 if __name__ == '__main__':
-    from db import db
     db.init_app(app)
     app.run(port=3000, debug=True)
