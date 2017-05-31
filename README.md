@@ -17,4 +17,4 @@ A URL shortening microservice built using Python. I originally made this with No
 
 ### Heroku Demo:
 
-A demo of the API can be found at https://tom-p-uk-url-shortener-flask.herokuapp.com/.
+Make GET requests to https://tom-p-uk-url-shortener-flask.herokuapp.com/api/<url> to receive a JSON response.
